@@ -18,7 +18,15 @@ jobs:
         # 체크아웃 -> github의 저장소로부터 소스 체크아웃
         - name: Checkout repository resource
           Uses: actions/checkout@v2
+
         # 환경변수 동작 생성 -> .env 파일 생성(ec2정보 상세), 기존코드 수정(보안)
+        - name: .env 환경 변수 동적 생성
+          run: |
+            echo "${{ secrets.CLIENT_ENV }}" > .env
+            pwd
+            ls -al
+        
+
         # 빌드를 위한 조건 -> node.js 설치
         # npm install 라이브러리 설치
         # 빌드

@@ -1,0 +1,5 @@
+# 로컬PC에서 개발시 주소 -> 8080 포트 사용
+#REACT_APP_API_URL=http://localhost:8080
+
+#EC2에서 구동시 주소 -> 8080 포트 사용
+REACT_APP_API_URL=http://47.130.64.236:8080
