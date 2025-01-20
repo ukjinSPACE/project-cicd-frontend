@@ -69,6 +69,7 @@ jobs:
       # /home/ubuntu/client/build/* /var/www/html/ 하위로 이동(mv)
       # nginx 재가동 : sudo systemctl restart nginx
       # /home/ubuntu/client/ 하위 모든 내용 삭제(rm)
+      # /var/www/html/* <- 기존에 서비스 하던 내용을 모두 삭제(rm) 처리
       - name: SSH로 EC2에 접속후, html등 내용 교체 후 웹서버 재가동
         uses: appleboy/ssh-action@v1.2.0
         with:
