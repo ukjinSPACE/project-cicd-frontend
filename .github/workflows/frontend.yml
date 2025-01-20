@@ -36,6 +36,6 @@ jobs:
         # 빌드
         # run: npm run build
 
-        # 빌드의 결과물을 ec2 업로드
+        # 빌드의 결과물을 ec2 업로드re
         # 대상 : ./build/*
         # 타겟 : /home/ubuntu/client
