@@ -13,7 +13,7 @@ on:
 # 해야할일
 jobs:
     react-deploy:
-      runs-on: jubuntu-latest
+      runs-on: ubuntu-latest
       steps:
         # 체크아웃 -> github의 저장소로부터 소스 체크아웃
         - name: Checkout repository resource
